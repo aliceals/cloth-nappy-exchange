@@ -15,7 +15,7 @@ server.use(express.urlencoded({ extended: false }))
 
 //home page route
 server.get('/', (req, res) =>
-    res.send("Hello World"))
+    res.render('home'))
 
 //Routers
 server.use('/', routes)
