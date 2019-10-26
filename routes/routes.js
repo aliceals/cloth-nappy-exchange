@@ -20,8 +20,6 @@ router.get('/have', (req, res) => {
 })
 
 router.post('/want', (req, res) => {
-
-
     let newWanter = {
         name: req.body.name,
         location: req.body.location,
@@ -32,11 +30,11 @@ router.post('/want', (req, res) => {
 
     db.createWanter(newWanter)
 
-    const wanterInfo = {
-        type: db.returnWanters()
+    const donatorInfo = {
+        type: db.returnDonators()
     }
 
-    res.render('want', wanterInfo)
+    res.render('want', donatorInfo)
 })
 
 router.post('/have', (req, res) => {
@@ -50,11 +48,12 @@ router.post('/have', (req, res) => {
     }
 
     db.createDonor(newDonator)
-    const donatorInfo = {
-        type: db.returnDonators()
+
+    const wanterInfo = {
+        type: db.returnWanters()
     }
 
-    res.render('have', donatorInfo)
+    res.render('have', wanterInfo)
 })
 
 module.exports = router

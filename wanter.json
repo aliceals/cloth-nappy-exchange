@@ -1,18 +1,21 @@
 {
   "wanter": [
     {
-      "name": "Alice",
-      "location": "Porirua",
-      "email": "alice@gmail.com",
-      "description": "ten nappies good condition",
-      "image": "/images/.png"
+      "name": "Freya",
+      "location": "Needs",
+      "email": ""
     },
     {
-      "name": "Alice",
-      "location": "Porirua",
-      "email": "alice@gmail.com",
-      "description": "ten nappies good condition",
-      "image": "/images/.png"
+      "name": "Hugo",
+      "location": "needs",
+      "email": ""
+    },
+    {
+      "name": "freya",
+      "location": "needs",
+      "age": "",
+      "email": "",
+      "notes": ""
     }
   ]
 }
