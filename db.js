@@ -2,6 +2,13 @@ const wantData = require('./wanter.json')
 const haveData = require('./donator.json')
 const fs = require('fs')
 
+function returnDonators() {
+    return haveData.donator
+}
+
+function returnWanters() {
+    return wantData.wanter
+}
 
 function createWanter(newWanter) {
     wantData.wanter.push(newWanter)
@@ -23,5 +30,7 @@ function createDonor(newDonator) {
 
 module.exports = {
     createWanter: createWanter,
-    createDonor: createDonor
+    createDonor: createDonor,
+    returnDonators: returnDonators,
+    returnWanters: returnWanters
 }

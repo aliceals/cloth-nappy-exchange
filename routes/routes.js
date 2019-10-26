@@ -1,27 +1,27 @@
 const express = require('express')
 const router = express.Router()
 const db = require('../db.js')
-const wantData = require('../wanter.json')
-const haveData = require('../donator.json')
 // router.get('/', function (req, res) {
 //     res.redirect('/want')
 // })
 
 router.get('/want', (req, res) => {
     const donatorInfo = {
-        type: haveData.donator
+        type: db.returnDonators()
     }
     res.render('want', donatorInfo)
 })
 
 router.get('/have', (req, res) => {
     const wanterInfo = {
-        type: wantData.wanter
+        type: db.returnWanters()
     }
     res.render('have', wanterInfo)
 })
 
 router.post('/want', (req, res) => {
+
+
     let newWanter = {
         name: req.body.name,
         location: req.body.location,
@@ -32,10 +32,15 @@ router.post('/want', (req, res) => {
 
     db.createWanter(newWanter)
 
-    res.render('want')
+    const wanterInfo = {
+        type: db.returnWanters()
+    }
+
+    res.render('want', wanterInfo)
 })
 
 router.post('/have', (req, res) => {
+
     let newDonator = {
         name: req.body.name,
         location: req.body.location,
@@ -45,8 +50,11 @@ router.post('/have', (req, res) => {
     }
 
     db.createDonor(newDonator)
+    const donatorInfo = {
+        type: db.returnDonators()
+    }
 
-    res.render('have')
+    res.render('have', donatorInfo)
 })
 
 module.exports = router

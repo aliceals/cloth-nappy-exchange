@@ -13,34 +13,6 @@
       "email": "alice@gmail.com",
       "description": "ten nappies good condition",
       "image": "/images/.png"
-    },
-    {
-      "name": "hugo",
-      "location": "hugo",
-      "email": "hugo",
-      "description": "hugo",
-      "image": ""
-    },
-    {
-      "name": "yyyyyy",
-      "location": "",
-      "age": "",
-      "email": "",
-      "notes": ""
-    },
-    {
-      "name": "Alice Alsford",
-      "location": "wellington",
-      "age": "22",
-      "email": "alice.alsford@gmail.com",
-      "notes": "adult napies"
-    },
-    {
-      "name": "dfs",
-      "location": "sdfsd",
-      "age": "sdfs",
-      "email": "sdfs",
-      "notes": ""
     }
   ]
 }
