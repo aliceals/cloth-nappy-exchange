@@ -76,6 +76,20 @@
       "email": "is ",
       "description": "test",
       "image": ""
+    },
+    {
+      "name": "this",
+      "location": "should",
+      "email": "work",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "Phil",
+      "location": "Porirua",
+      "email": "phil@fakfjs",
+      "description": "I have lots of nappies",
+      "image": ""
     }
   ]
 }
