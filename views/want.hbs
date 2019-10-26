@@ -53,9 +53,12 @@
             to information about how to claim the nappy
         </p>
         <p>This will display from the donate page</p>
-        <img src=".png">
-        <h3>Location</h3>
-        <h4>Description</h4>
+        {{#each type}}
+        <img src={{image}}>
+        <h3>Name: {{name}}</h3>
+        <h3>Location: {{location}}</h3>
+        <h4>Description: {{description}}</h4>
+        {{/each}}
         <button>Yes Please</button>
     </div>
 </div>

@@ -1,20 +1,24 @@
 const express = require('express')
 const router = express.Router()
+const db = require('../db.js')
 const wantData = require('../wanter.json')
 const haveData = require('../donator.json')
-const fs = require('fs')
-const db = require('../db.js')
 // router.get('/', function (req, res) {
 //     res.redirect('/want')
 // })
 
 router.get('/want', (req, res) => {
-
-    res.render('want')
+    const donatorInfo = {
+        type: haveData.donator
+    }
+    res.render('want', donatorInfo)
 })
 
 router.get('/have', (req, res) => {
-    res.render('have')
+    const wanterInfo = {
+        type: wantData.wanter
+    }
+    res.render('have', wanterInfo)
 })
 
 router.post('/want', (req, res) => {
