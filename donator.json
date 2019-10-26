@@ -1,27 +1,46 @@
 {
-  "info": {
-    "donator": [
-      {
-        "name": "Alice",
-        "location": "Porirua",
-        "email": "alice@gmail.com",
-        "description": "ten nappies good condition",
-        "image": "/images/.png"
-      },
-      {
-        "name": "Alice",
-        "location": "Porirua",
-        "email": "alice@gmail.com",
-        "description": "ten nappies good condition",
-        "image": "/images/.png"
-      },
-      {
-        "name": "hugo",
-        "location": "hugo",
-        "email": "hugo",
-        "description": "hugo",
-        "image": ""
-      }
-    ]
-  }
+  "donator": [
+    {
+      "name": "Alice",
+      "location": "Porirua",
+      "email": "alice@gmail.com",
+      "description": "ten nappies good condition",
+      "image": "/images/.png"
+    },
+    {
+      "name": "Alice",
+      "location": "Porirua",
+      "email": "alice@gmail.com",
+      "description": "ten nappies good condition",
+      "image": "/images/.png"
+    },
+    {
+      "name": "hugo",
+      "location": "hugo",
+      "email": "hugo",
+      "description": "hugo",
+      "image": ""
+    },
+    {
+      "name": "sadfdsa",
+      "location": "asfds",
+      "email": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "sadfdsa",
+      "location": "asfds",
+      "email": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "hi",
+      "location": "this",
+      "email": "is ",
+      "description": "test",
+      "image": ""
+    }
+  ]
 }

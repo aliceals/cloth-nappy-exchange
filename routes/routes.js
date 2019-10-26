@@ -3,6 +3,7 @@ const router = express.Router()
 const wantData = require('../wanter.json')
 const haveData = require('../donator.json')
 const fs = require('fs')
+const db = require('../db.js')
 // router.get('/', function (req, res) {
 //     res.redirect('/want')
 // })
@@ -25,41 +26,23 @@ router.post('/want', (req, res) => {
         notes: req.body.notes
     }
 
-    let currentData = {
-        info: wantData
-    }
-
-    wantData.wanter.push(newWanter)
-
-    let editedData = JSON.stringify(wantData, null, 2)
-
-
-    fs.writeFileSync('wanter.json', editedData)
+    db.createWanter(newWanter)
 
     res.render('want')
 })
 
-// router.post('/have', (req, res) => {
-//     let newDonator = {
-//         name: req.body.name,
-//         location: req.body.location,
-//         email: req.body.email,
-//         description: req.body.description,
-//         image: req.body.image
-//     }
+router.post('/have', (req, res) => {
+    let newDonator = {
+        name: req.body.name,
+        location: req.body.location,
+        email: req.body.email,
+        description: req.body.description,
+        image: req.body.image
+    }
 
-//     let currentData = {
-//         info: haveData
-//     }
+    db.createDonor(newDonator)
 
-//     currentData.info.donator.push(newDonator)
-
-//     let editedData = JSON.stringify(currentData, null, 2)
-
-
-//     fs.writeFileSync('donator.json', editedData)
-
-//     res.render('have')
-// })
+    res.render('have')
+})
 
 module.exports = router
