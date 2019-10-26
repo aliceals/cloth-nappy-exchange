@@ -6,7 +6,7 @@ const router = express.Router()
 // })
 
 router.get('/want', function (req, res) {
-    res.send("this is the page that will have the wants")
+    res.render('home')
 })
 
 router.get('/have', function (req, res) {
