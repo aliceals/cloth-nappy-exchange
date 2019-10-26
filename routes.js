@@ -6,11 +6,11 @@ const router = express.Router()
 // })
 
 router.get('/want', function (req, res) {
-    res.render('home')
+    res.render('want')
 })
 
 router.get('/have', function (req, res) {
-    res.send("this is the page that will have the haves")
+    res.render('have')
 })
 
 module.exports = router;
