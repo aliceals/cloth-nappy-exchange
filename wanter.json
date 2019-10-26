@@ -1,0 +1,18 @@
+{
+    "wanter": [
+        {
+            "name": "Alice",
+            "location": "Porirua",
+            "age": "1",
+            "email": "alice@gmail.com",
+            "notes": "thanks"
+        },
+        {
+            "name": "Bob",
+            "location": "Wellington",
+            "age": "3",
+            "email": "alice@gmail.com",
+            "notes": "yay"
+        }
+    ]
+}

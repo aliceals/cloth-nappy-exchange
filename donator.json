@@ -1,0 +1,18 @@
+{
+    "donator": [
+        {
+            "name": "Alice",
+            "location": "Porirua",
+            "email": "alice@gmail.com",
+            "description": "ten nappies good condition",
+            "image": "/images/.png"
+        },
+        {
+            "name": "Alice",
+            "location": "Porirua",
+            "email": "alice@gmail.com",
+            "description": "ten nappies good condition",
+            "image": "/images/.png"
+        }
+    ]
+}
