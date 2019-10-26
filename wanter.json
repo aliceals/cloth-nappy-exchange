@@ -1,27 +1,32 @@
 {
-  "info": {
-    "wanter": [
-      {
-        "name": "Alice",
-        "location": "Porirua",
-        "email": "alice@gmail.com",
-        "description": "ten nappies good condition",
-        "image": "/images/.png"
-      },
-      {
-        "name": "Alice",
-        "location": "Porirua",
-        "email": "alice@gmail.com",
-        "description": "ten nappies good condition",
-        "image": "/images/.png"
-      },
-      {
-        "name": "freya",
-        "location": "freya",
-        "age": "freya",
-        "email": "freya",
-        "notes": "freya"
-      }
-    ]
-  }
+  "wanter": [
+    {
+      "name": "Alice",
+      "location": "Porirua",
+      "email": "alice@gmail.com",
+      "description": "ten nappies good condition",
+      "image": "/images/.png"
+    },
+    {
+      "name": "Alice",
+      "location": "Porirua",
+      "email": "alice@gmail.com",
+      "description": "ten nappies good condition",
+      "image": "/images/.png"
+    },
+    {
+      "name": "hugo",
+      "location": "hugo",
+      "email": "hugo",
+      "description": "hugo",
+      "image": ""
+    },
+    {
+      "name": "yyyyyy",
+      "location": "",
+      "age": "",
+      "email": "",
+      "notes": ""
+    }
+  ]
 }

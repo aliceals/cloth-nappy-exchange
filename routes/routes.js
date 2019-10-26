@@ -29,39 +29,37 @@ router.post('/want', (req, res) => {
         info: wantData
     }
 
-    console.log(currentData.info.wanter)
-    currentData.info.wanter.push(newWanter)
+    wantData.wanter.push(newWanter)
 
-    let editedData = JSON.stringify(currentData, null, 2)
+    let editedData = JSON.stringify(wantData, null, 2)
 
-    console.log(editedData)
 
     fs.writeFileSync('wanter.json', editedData)
 
     res.render('want')
 })
 
-router.post('/have', (req, res) => {
-    let newDonator = {
-        name: req.body.name,
-        location: req.body.location,
-        email: req.body.email,
-        description: req.body.description,
-        image: req.body.image
-    }
+// router.post('/have', (req, res) => {
+//     let newDonator = {
+//         name: req.body.name,
+//         location: req.body.location,
+//         email: req.body.email,
+//         description: req.body.description,
+//         image: req.body.image
+//     }
 
-    let currentData = {
-        info: haveData
-    }
+//     let currentData = {
+//         info: haveData
+//     }
 
-    currentData.info.donator.push(newDonator)
+//     currentData.info.donator.push(newDonator)
 
-    let editedData = JSON.stringify(currentData, null, 2)
+//     let editedData = JSON.stringify(currentData, null, 2)
 
 
-    fs.writeFileSync('donator.json', editedData)
+//     fs.writeFileSync('donator.json', editedData)
 
-    res.render('have')
-})
+//     res.render('have')
+// })
 
 module.exports = router
