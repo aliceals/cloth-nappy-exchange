@@ -1,11 +1,20 @@
-.want {
-    background-color: chocolate;
-    padding: 100px;
-    height: 500px;
+footer {
+    margin-top: 50px;
 }
 
-.need {
-    background-color: cornflowerblue;
-   padding: 120px;
-   height: 500px;
+
+.have-row1 {
+    padding-top: 20px;
+    padding-right: 100px !important;
+}
+
+.jumbotron {
+    text-align: center;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+.have-row2 {
+    padding-top: 20px;
+    padding-left: 100px !important;
 }

@@ -1,6 +1,5 @@
 <div>
-
-    <div>
+    <div class="jumbotron">
         <h1>Donate cloth nappies</h1>
         <p>Thank you for donating. If you have spare or unused cloth nappies lying around that are in good condition
             that you would like to donate then please either fill in your details below or
@@ -8,59 +7,67 @@
             donate for information on how it works.
         </p>
     </div>
-    <div>
-        <div>
-            <h2>Donate:</h2>
-            <p>Place your name and information below</p>
-            <form class="form newComment" action="/have" method="post">
-                <label for="name" class="form-item">
-                    Your Name:
-                    <input type="text" name="name" value="">
-                </label>
-                <label for="location" class="form-item">
-                    Location (NZ only):
-                    <input type="text" name="location" value="">
-                </label>
-                <label for="email" class="form-item">
-                    Email address (this wont show until your listing gets picked):
-                    <input type="text" name="email" value="">
-                </label>
-                <label for="description" class="form-item">
-                    Description of nappies:
-                    <input type="text" name="description" value="">
-                </label>
-                <label for="image" class="form-item">
-                    Image:
-                    <input type="file" name="image" size="40">
-                </label>
-                <input type="submit" name="submit" value="Submit">
-            </form>
+    <div class="container">
+        <div class="row ">
+            <div class="col-xl-6 have-row1">
+                <div>
+                    <h3>Notes about listing a donation</h3>
+                    <p>Input your name and location.
+                        Your email address wont show up on the want listing page. It will remain hidden until
+                        someone clicks accept on your listing. When they accept your listing they will get
+                        an email with your details and you with theirs to organise pick up/delivery of the nappies
+                    </p>
+                </div>
+                <div>
+                    <h2>Donate:</h2>
+                    <p>Place your name and information below</p>
+                    <form class="form newComment" action="/have" method="post">
+                        <label for="name" class="form-item">
+                            Your Name:
+                            <input type="text" name="name" value="">
+                        </label>
+                        <label for="location" class="form-item">
+                            Location (NZ only):
+                            <input type="text" name="location" value="">
+                        </label>
+                        <label for="email" class="form-item">
+                            Email address (this wont show until your listing gets picked):
+                            <input type="text" name="email" value="">
+                        </label>
+                        <label for="description" class="form-item">
+                            Description of nappies:
+                            <input type="text" name="description" value="">
+                        </label>
+                        <label for="image" class="form-item">
+                            Image:
+                            <input type="file" name="image" size="40">
+                        </label>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-6 have-row2">
+                <h2>See want listing below</h2>
+                <p>Click on the "Donate" button to send nappies to the person. You will get redirected
+                    to information about how to arrange the exchange.
+                </p>
+                <p>This will display from the want page</p>
+                <hr>
+                {{#each type}}
+                <p><strong>Name: </strong>{{name}}</p>
+                <p><strong>Location: </strong>{{location}}</p>
+                <p><strong>Age of kids: </strong> {{age}}</p>
+                <p><strong>Other notes: </strong>{{notes}}</p>
+                <br>
+                <button>Donate</button>
+                <br>
+                <br>
+                <hr>
+                {{/each}}
+            </div>
         </div>
 
-        <div>
-            <h3>Notes about listing a donation</h3>
-            <p>Input your name and location.
-                Your email address wont show up on the want listing page. It will remain hidden until
-                someone clicks accept on your listing. When they accept your listing they will get
-                an email with your details and you with theirs to organise pick up/delivery of the nappies
-            </p>
-        </div>
-    </div>
-
-    <div>
-        <h2>See want listing below</h2>
-        <p>Click on the "Donate" button to send nappies to the person. You will get redirected
-            to information about how to arrange the exchange.
-        </p>
-        <p>This will display from the want page</p>
-        {{#each type}}
-        <h3>Name: {{name}}</h3>
-        <h3>Location: {{location}}</h3>
-        <h3>Age of kids: {{age}}</h3>
-        <h4>Other notes: {{notes}}</h4>
-        <br>
-        <button>Donate</button>
-        {{/each}}
 
     </div>
+
 </div>
