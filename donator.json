@@ -27,6 +27,20 @@
       "email": "",
       "description": "",
       "image": ""
+    },
+    {
+      "name": "Image",
+      "location": "Image",
+      "email": "",
+      "description": "2",
+      "image": "nappy2.jpg"
+    },
+    {
+      "name": "alice",
+      "location": "",
+      "email": "",
+      "description": "",
+      "image": "donate.jpeg"
     }
   ]
 }
