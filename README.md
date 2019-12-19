@@ -11,7 +11,6 @@ as I felt it was a very helpful cause
 
 Tech used 
 Handlebars
-Nodejs
 JavaScript
 HTML
 CSS 
