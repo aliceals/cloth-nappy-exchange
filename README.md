@@ -17,3 +17,7 @@ CSS
 
 This was my first personal project in the early weeks of
 Dev Academy before learning React Redux, databases and APIs
+
+## To do
+ - Style better
+ 
